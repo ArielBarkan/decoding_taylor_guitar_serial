@@ -15,3 +15,8 @@
  https://github.com/ArielBarkan/decoding_taylor_guitar_serial
 
  Enjoy the code and feel free to send me any feedback to:  arielbarkan@gmail.com
+
+
+ Call the getTaylorData function with the serial number
+
+ Example: getTaylorData(20070311301)
