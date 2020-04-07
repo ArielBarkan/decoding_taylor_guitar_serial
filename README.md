@@ -1,0 +1,1 @@
+# decoding_taylor_guitar_serial
