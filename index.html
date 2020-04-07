@@ -1,0 +1,62 @@
+<html>
+    <head>
+            <script src="script.js"></script>
+
+            <script>
+                function getSn(){
+                    const sn = document.querySelector("#sn").value;
+                    
+                    const result = getTaylorData(sn);
+
+                    document.querySelector("#result").innerHTML = JSON.stringify(result)
+                   console.log(result);
+                }
+             
+
+            </script>
+    </head>
+    <body>
+<h3>
+This following code is a NON-OFFICIAL solution for decoding Taylor Guitars serial numbers
+<br>
+The official guide for decoding a Taylor Guitar's Serial numbers can be found at:
+<br>
+<i><a href="https://www.taylorguitars.com/support/general/decoding-taylor-guitars-serial" target="_blank">https://www.taylorguitars.com/support/general/decoding-taylor-guitars-serial</a></i>
+</h3>
+    <input type="text" id="sn" placeholder="Use the samples below">
+    <button id="go" onclick="getSn()">Go</button>
+
+    <br>
+    <h4>Samples:</h4>
+
+    non existing serial number length
+    <li>2103</li>
+    <br>
+
+    valid 9 digits
+    <li>980311301</li>
+    <br>
+    
+    valid 10 digits
+    <li>1107064001</li>
+    <br>
+
+    valid 10 digits,  My guitar :-) 
+    <li>2103129161</li>
+    <br>
+
+    valid 11 digits
+    <li>20070311301</li>
+    <br>
+  
+    <br/>
+    <hr>
+    <h4>Result:(also can be seen via the browser console)</h4>
+<textarea id="result" style="margin: 0px; width: 493px; height: 103px;">
+
+  
+
+</textarea>
+        
+    </body>
+</html>
